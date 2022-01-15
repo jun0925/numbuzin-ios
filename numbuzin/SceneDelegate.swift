@@ -2,10 +2,12 @@
 //  SceneDelegate.swift
 //  numbuzin
 //
-//  Created by pples on 2022/01/15.
+//  Created by jun0925 on 2022/01/15.
 //
 
 import UIKit
+import Foundation
+import WebKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

@@ -2,15 +2,15 @@
 //  AppDelegate.swift
 //  numbuzin
 //
-//  Created by pples on 2022/01/15.
+//  Created by jun0925 on 2022/01/15.
 //
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
