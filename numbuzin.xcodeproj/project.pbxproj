@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DDF69C7B8B55C29F3D957DE /* Pods_numbuzin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6982DB22755C81385BE85 /* Pods_numbuzin.framework */; };
 		E1B8877F27929E0F00090C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8877E27929E0F00090C49 /* AppDelegate.swift */; };
 		E1B8878127929E0F00090C49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8878027929E0F00090C49 /* SceneDelegate.swift */; };
 		E1B8878327929E0F00090C49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B8878227929E0F00090C49 /* ViewController.swift */; };
 		E1B8878627929E0F00090C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B8878427929E0F00090C49 /* Main.storyboard */; };
 		E1B8878827929E1100090C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1B8878727929E1100090C49 /* Assets.xcassets */; };
 		E1B8878B27929E1100090C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1B8878927929E1100090C49 /* LaunchScreen.storyboard */; };
+		E1B887942792A5A900090C49 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B887932792A5A900090C49 /* WebKit.framework */; };
+		E1B887962792A7CF00090C49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1B887952792A7CF00090C49 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AC6982DB22755C81385BE85 /* Pods_numbuzin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_numbuzin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFBD293194343C36D871791 /* Pods-numbuzin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numbuzin.debug.xcconfig"; path = "Target Support Files/Pods-numbuzin/Pods-numbuzin.debug.xcconfig"; sourceTree = "<group>"; };
+		DB4C91D5A0998D0FB42A453A /* Pods-numbuzin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numbuzin.release.xcconfig"; path = "Target Support Files/Pods-numbuzin/Pods-numbuzin.release.xcconfig"; sourceTree = "<group>"; };
 		E1B8877B27929E0F00090C49 /* numbuzin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numbuzin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B8877E27929E0F00090C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B8878027929E0F00090C49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,9 @@
 		E1B8878727929E1100090C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1B8878A27929E1100090C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1B8878C27929E1100090C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1B887932792A5A900090C49 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		E1B887952792A7CF00090C49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/numbuzin/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1B887972792AA5A00090C49 /* numbuzin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = numbuzin.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1B887942792A5A900090C49 /* WebKit.framework in Frameworks */,
+				7DDF69C7B8B55C29F3D957DE /* Pods_numbuzin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05DA9996BE7672377F4005AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CFBD293194343C36D871791 /* Pods-numbuzin.debug.xcconfig */,
+				DB4C91D5A0998D0FB42A453A /* Pods-numbuzin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1B8877227929E0F00090C49 = {
 			isa = PBXGroup;
 			children = (
 				E1B8877D27929E0F00090C49 /* numbuzin */,
 				E1B8877C27929E0F00090C49 /* Products */,
+				E1B887922792A5A900090C49 /* Frameworks */,
+				05DA9996BE7672377F4005AF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +78,7 @@
 		E1B8877D27929E0F00090C49 /* numbuzin */ = {
 			isa = PBXGroup;
 			children = (
+				E1B887972792AA5A00090C49 /* numbuzin.entitlements */,
 				E1B8877E27929E0F00090C49 /* AppDelegate.swift */,
 				E1B8878027929E0F00090C49 /* SceneDelegate.swift */,
 				E1B8878227929E0F00090C49 /* ViewController.swift */,
@@ -63,8 +86,18 @@
 				E1B8878727929E1100090C49 /* Assets.xcassets */,
 				E1B8878927929E1100090C49 /* LaunchScreen.storyboard */,
 				E1B8878C27929E1100090C49 /* Info.plist */,
+				E1B887952792A7CF00090C49 /* GoogleService-Info.plist */,
 			);
 			path = numbuzin;
+			sourceTree = "<group>";
+		};
+		E1B887922792A5A900090C49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1B887932792A5A900090C49 /* WebKit.framework */,
+				1AC6982DB22755C81385BE85 /* Pods_numbuzin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1B8878F27929E1100090C49 /* Build configuration list for PBXNativeTarget "numbuzin" */;
 			buildPhases = (
+				F92F66DEC73C470749A3C022 /* [CP] Check Pods Manifest.lock */,
 				E1B8877727929E0F00090C49 /* Sources */,
 				E1B8877827929E0F00090C49 /* Frameworks */,
 				E1B8877927929E0F00090C49 /* Resources */,
+				FA81A48715103B6BFD4F0F0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +161,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1B8878B27929E1100090C49 /* LaunchScreen.storyboard in Resources */,
+				E1B887962792A7CF00090C49 /* GoogleService-Info.plist in Resources */,
 				E1B8878827929E1100090C49 /* Assets.xcassets in Resources */,
 				E1B8878627929E0F00090C49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F92F66DEC73C470749A3C022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-numbuzin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA81A48715103B6BFD4F0F0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numbuzin/Pods-numbuzin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numbuzin/Pods-numbuzin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numbuzin/Pods-numbuzin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1B8877727929E0F00090C49 /* Sources */ = {
@@ -284,9 +362,11 @@
 		};
 		E1B8879027929E1100090C49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CFBD293194343C36D871791 /* Pods-numbuzin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = numbuzin/numbuzin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXXFVUVCQU;
@@ -312,9 +392,11 @@
 		};
 		E1B8879127929E1100090C49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4C91D5A0998D0FB42A453A /* Pods-numbuzin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = numbuzin/numbuzin.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QXXFVUVCQU;

@@ -1,0 +1,6 @@
+framework module Pods_numbuzin {
+  umbrella header "Pods-numbuzin-umbrella.h"
+
+  export *
+  module * { export * }
+}
